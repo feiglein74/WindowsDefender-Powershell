@@ -7,9 +7,28 @@ Die Versionierung folgt [Semantic Versioning](https://semver.org/lang/de/).
 
 ## [Unveröffentlicht]
 
+_Keine Änderungen_
+
+## [1.1.0] - 2025-11-14
+
 ### Hinzugefügt
-- VERSION-Datei zur Versionsverwaltung
-- Versionierungsstrategie in CLAUDE.md dokumentiert
+- PowerShell Comment-Based Help mit Synopsis, Description und Beispielen
+- Parameter `-ExportPath` für CSV-Export der Ergebnisse
+- Fehlerprotokollierung: Nicht erreichbare Server werden separat erfasst
+- Computername in der Ausgabe für bessere Zuordnung
+- Zeitstempel für jeden Eintrag (Format: yyyy-MM-dd HH:mm:ss)
+- Progress-Bar zeigt Fortschritt während der Abfrage
+- Farbcodierte Konsolenausgabe (Grün=OK, Rot=Fehler)
+- Zusammenfassung mit Gesamtzahl, erfolgreiche und fehlerhafte Server
+- Übersichtliche Tabellenausgabe mit `Format-Table`
+- Try-Catch Fehlerbehandlung für robuste Ausführung
+- Validierung: Prüfung ob Anmeldeinformationen eingegeben wurden
+- Validierung: Prüfung ob Server in AD gefunden wurden
+
+### Geändert
+- `ErrorAction` von `SilentlyContinue` auf `Stop` für bessere Fehlerbehandlung
+- Ausgabeformat von einfacher Liste zu strukturierter Tabelle
+- Skript-Struktur verbessert mit klarer Trennung der Abschnitte
 
 ## [1.0.0] - 2025-11-14
 

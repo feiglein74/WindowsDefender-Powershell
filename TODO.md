@@ -5,16 +5,16 @@ Diese Datei enthält offene Aufgaben und geplante Verbesserungen für dieses Rep
 ## Offen
 
 ### Funktionen
-- [ ] Export-Funktionalität für Ergebnisse hinzufügen (CSV, Excel)
-- [ ] Fehlerprotokollierung für nicht erreichbare Server implementieren
 - [ ] HTML-Report-Generator für Übersichtlichkeit erstellen
-- [ ] Zeitstempel zu Abfrageergebnissen hinzufügen
+- [ ] Excel-Export mit Formatierung implementieren
+- [ ] E-Mail-Versand der Ergebnisse an Administrator
+- [ ] Automatische Planung via Task Scheduler
 
 ### Verbesserungen
-- [ ] Parameter für Skript hinzufügen (z.B. -ComputerName, -ExportPath)
-- [ ] Progress-Bar für lange Ausführungszeiten implementieren
-- [ ] Parallel-Processing für schnellere Ausführung evaluieren
+- [ ] Weitere Parameter hinzufügen (z.B. -ComputerName für einzelne Server, -OUFilter)
+- [ ] Parallel-Processing für schnellere Ausführung evaluieren (Invoke-Command -AsJob)
 - [ ] Konfigurationsdatei für häufig verwendete Filter erstellen
+- [ ] Logging in Datei zusätzlich zur Konsolenausgabe
 
 ### Dokumentation
 - [ ] Beispiele für verschiedene Anwendungsfälle hinzufügen
@@ -34,3 +34,13 @@ _Aktuell keine Aufgaben in Bearbeitung_
 - [x] Semantic Versioning einrichten
 - [x] VERSION-Datei erstellen
 - [x] Versionierungsstrategie dokumentieren
+- [x] Export-Funktionalität für Ergebnisse hinzufügen (CSV)
+- [x] Fehlerprotokollierung für nicht erreichbare Server implementieren
+- [x] Zeitstempel zu Abfrageergebnissen hinzufügen
+- [x] Parameter für Skript hinzufügen (-ExportPath)
+- [x] Progress-Bar für lange Ausführungszeiten implementieren
+- [x] PowerShell Comment-Based Help hinzufügen
+- [x] Computername in Ausgabe integrieren
+- [x] Übersichtliche Tabellenausgabe erstellen
+- [x] Farbcodierte Konsolenausgabe implementieren
+- [x] Zusammenfassung mit Statistiken hinzufügen

@@ -51,6 +51,17 @@ Beim Erstellen neuer Skripte oder Ändern bestehender:
 - Der `-ErrorAction` Parameter kann auf `Stop` oder `Continue` für unterschiedliches Fehlerbehandlungsverhalten geändert werden
 - Ausgabeformatierung in Betracht ziehen: `| Format-Table`, `| Export-Csv`, etc.
 
+### Skript-Features
+
+Das Haupt-Skript `get-Server-winDefenderStatus.ps1` bietet:
+- **PowerShell Comment-Based Help**: Vollständige Dokumentation mit `-?` abrufbar
+- **Parameter**: Optional `-ExportPath` für CSV-Export
+- **Progress-Anzeige**: Echtzeit-Fortschrittsbalken während der Ausführung
+- **Fehlerprotokollierung**: Separate Erfassung nicht erreichbarer Server
+- **Farbcodierte Ausgabe**: Grün für Erfolg, Rot für Fehler, Cyan für Informationen
+- **Zusammenfassung**: Statistiken über erfolgreiche/fehlerhafte Abfragen
+- **Tabellenformat**: Übersichtliche Darstellung mit ComputerName, Feature, InstallState, Status und Timestamp
+
 ### Anforderungen
 
 Skripte benötigen:
