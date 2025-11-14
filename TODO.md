@@ -31,3 +31,6 @@ _Aktuell keine Aufgaben in Bearbeitung_
 - [x] CLAUDE.md erstellen
 - [x] CHANGELOG.md erstellen
 - [x] TODO.md erstellen
+- [x] Semantic Versioning einrichten
+- [x] VERSION-Datei erstellen
+- [x] Versionierungsstrategie dokumentieren

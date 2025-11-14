@@ -58,3 +58,27 @@ Skripte benötigen:
 - Entsprechende AD-Berechtigungen zum Abfragen von Computer-Objekten
 - Administratoranmeldeinformationen für Remote-Server-Zugriff
 - PowerShell-Remoting muss auf den Zielservern aktiviert sein
+
+## Versionierung
+
+Dieses Projekt verwendet [Semantic Versioning](https://semver.org/lang/de/) (MAJOR.MINOR.PATCH):
+
+- **MAJOR**: Inkompatible API-Änderungen oder grundlegende Umstrukturierung
+- **MINOR**: Neue Funktionalität, die abwärtskompatibel ist
+- **PATCH**: Abwärtskompatible Fehlerbehebungen
+
+### Versionsverwaltung
+
+Die aktuelle Version wird in folgenden Dateien gepflegt:
+- `VERSION`: Enthält die aktuelle Versionsnummer
+- `CHANGELOG.md`: Dokumentiert alle Änderungen pro Version
+- Git-Tags: Jede Version wird mit `git tag v1.0.0` markiert
+
+### Version aktualisieren
+
+Bei Änderungen:
+1. `VERSION`-Datei mit neuer Versionsnummer aktualisieren
+2. `CHANGELOG.md` unter [Unveröffentlicht] Änderungen dokumentieren
+3. Bei Release: Unveröffentlichte Änderungen in neue Versionssektion verschieben
+4. Git-Tag für die Version erstellen: `git tag -a v1.0.0 -m "Version 1.0.0"`
+5. Tag pushen: `git push origin v1.0.0`
